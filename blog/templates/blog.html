@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人博客</title>
+</head>
+<body>
+<h1>博客</h1>
+{% for blog in blogs.all %}
+{{ blog.title }}
+<br>
+{{ blog.date }}
+<br>
+<img src = '{{blog.image.url }}' width="225" height="225">
+<br>
+{{ blog.text }}
+<br>
+{% endfor %}
+
+</body>
+</html>
