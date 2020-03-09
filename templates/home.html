@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+{% load staticfiles %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -81,9 +82,10 @@
   <section class="jumbotron text-center">
     <div class="container">
       <h1>个人纪录</h1>
-      <p class="lead text-muted">这是一个个人纪录的网站</p>
+      <img src="{% static "huaji.jpg" %}" width="600" height="225">
       <p>
         <a href="blog" class="btn btn-primary my-2">我的博客</a>
+        <a href="{% static 'resume.pdf'%}" class="btn btn-primary my-2">我的简历</a>
       </p>
     </div>
   </section>
